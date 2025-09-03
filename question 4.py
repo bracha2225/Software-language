@@ -11,8 +11,14 @@ def is_twin_prime(n):
         n = int(n)
     except (ValueError, TypeError):
         return "invalid input"
-    if is_prime(n) and is_prime(n + 2):
-        return True
+    
+    if not is_prime(n):
+        return "invalid input"
+    
+    if is_prime(n + 2):
+        return n + 2
+    elif is_prime(n - 2):
+        return n - 2
     else:
         return "invalid input"
 
