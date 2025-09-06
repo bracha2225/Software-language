@@ -6,24 +6,31 @@ def is_prime(n):
             return False
     return True
 
-def is_twin_prime(n):
-    try:
-        n = int(n)
-    except (ValueError, TypeError):
-        return "invalid input"
-    if is_prime(n) and is_prime(n + 2):
-        return True
+def twin_prime(n):
+    if is_prime(n + 2):
+        return n + 2
+    elif is_prime(n - 2):
+        return n - 2
     else:
-        return "invalid input"
+        return None
 
-num = input("enter number:\n")
-result = is_twin_prime(num)
-print(result)
+def main():
+    num = input("enter prime number:\n")
+    try:
+        n = int(num)
+    except (ValueError, TypeError):
+        print("invalid input")
+        return
 
-def print_twin_primes(limit):
-    prev = 2
-    for n in range(3, limit + 1, 2):
-        if is_prime(n):
-            if n - prev == 2:
-                print(f"({prev}, {n})")
-            prev = n
+    if not is_prime(n):
+        print("invalid input")
+        return
+
+    twin = twin_prime(n)
+    if twin:
+        print(twin)
+    else:
+        print("invalid input")
+
+if __name__ == "__main__":
+    main()
