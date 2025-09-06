@@ -6,5 +6,5 @@ def sum_digits(num):
         return "invalid input"
 
 
-num2 = input("enter number: ")
+num2 = input("Enter a number: ")
 print(sum_digits(num2))
