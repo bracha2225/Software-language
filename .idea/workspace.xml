@@ -4,19 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="75b5d31d-4ade-4a26-bb4a-ff09f66464d7" name="Changes" comment="task 1 correct question 4">
-      <change afterPath="$PROJECT_DIR$/task 2/question 1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task 2/question 2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task 2/question 3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task 2/question 4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task 2/question 5.py" afterDir="false" />
+    <list default="true" id="75b5d31d-4ade-4a26-bb4a-ff09f66464d7" name="Changes" comment="task 2 question 1-5">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/question 1.py" beforeDir="false" afterPath="$PROJECT_DIR$/task 1/question 1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/question 2.py" beforeDir="false" afterPath="$PROJECT_DIR$/task 1/question 2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/question 3.py" beforeDir="false" afterPath="$PROJECT_DIR$/task 1/question 3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/question 4.py" beforeDir="false" afterPath="$PROJECT_DIR$/task 1/question 4.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/question 5.py" beforeDir="false" afterPath="$PROJECT_DIR$/task 1/question 5.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/question 6.py" beforeDir="false" afterPath="$PROJECT_DIR$/task 1/question 6.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task 2/question 1.py" beforeDir="false" afterPath="$PROJECT_DIR$/task 2/question 1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task 2/question 2.py" beforeDir="false" afterPath="$PROJECT_DIR$/task 2/question 2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task 2/question 3.py" beforeDir="false" afterPath="$PROJECT_DIR$/task 2/question 3.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +105,15 @@
       <option name="project" value="LOCAL‎" />
       <updated>1757190350981</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL‎-00004" summary="task 2 question 1-5">
+      <option name="closed" value="true" />
+      <created>1757669756014</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL‎-00004" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1757669756014</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -131,6 +131,7 @@
     <MESSAGE value="task 1 question 1-6" />
     <MESSAGE value="task 1 correct question 2" />
     <MESSAGE value="task 1 correct question 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="task 1 correct question 4" />
+    <MESSAGE value="task 2 question 1-5" />
+    <option name="LAST_COMMIT_MESSAGE" value="task 2 question 1-5" />
   </component>
 </project>

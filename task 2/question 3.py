@@ -1,5 +1,3 @@
-from datetime import datetime
-
 def date_range_closure():
     return lambda start, end: [start, (end - start).days]
 
