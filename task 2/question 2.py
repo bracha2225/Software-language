@@ -1,12 +1,23 @@
+numbers = list(range(1, 1001))
+
 split_lists = lambda lst: (
     list(filter(lambda x: x % 2 == 0, lst)),
     list(filter(lambda x: x % 2 != 0, lst))
 )
 
-def multiply_consecutive():
-    return lambda lst: list(map(lambda i: lst[i] * lst[i + 1], range(len(lst) - 1)))
+evens, odds = split_lists(numbers)
 
-def linear_with_next(a=0.5, b=2):
-    return lambda lst: list(map(lambda i: lst[i] / 2 + 2 + lst[i + 1], range(len(lst) - 1)))
+multiply_consecutive = lambda lst: [lst[i] * lst[i + 1] for i in range(len(lst) - 1)]
+linear_with_next = lambda lst: [lst[i] / 2 + 2 + lst[i + 1] for i in range(len(lst) - 1)]
 
-sum_results = lambda lst1, lst2: (sum(lst1), sum(lst2))
+evens_multiplied = multiply_consecutive(evens)
+odds_multiplied = multiply_consecutive(odds)
+
+evens_linear = linear_with_next(evens)
+odds_linear = linear_with_next(odds)
+
+sum_evens_multiplied = sum(evens_multiplied)
+sum_odds_multiplied = sum(odds_multiplied)
+
+sum_evens_linear = sum(evens_linear)
+sum_odds_linear = sum(odds_linear)

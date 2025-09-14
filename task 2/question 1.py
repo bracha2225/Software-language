@@ -1,15 +1,18 @@
+linear = lambda x: x/2 + 2
+
+lst = list(map(linear, range(0, 10001)))
+
+sum_lst = sum(lst)
+
 import time
+start = time.time()
+imperative_sum = 0
+for x in lst:
+    imperative_sum += x
+imperative_time = time.time() - start
 
-def linear_closure(a=0.5, b=2):
-    return lambda x: a * x + b
+start = time.time()
+functional_sum = sum(lst)
+functional_time = time.time() - start
 
-def higher_order_create_list(f):
-    return lambda start, end: list(map(f, range(start, end + 1)))
-
-def higher_order_sum():
-    return lambda lst: sum(lst)
-
-def measure_time(f):
-    return lambda *args, **kwargs: (
-        lambda start, end: (result := f(start, end), elapsed := time.time() - (t := time.time()), result, elapsed)
-    )(*args, **kwargs)[2:]
+single_value = linear(7)
