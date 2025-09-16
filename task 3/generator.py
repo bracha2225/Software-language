@@ -83,6 +83,6 @@ def exp_generator(x):
         yield total
         n += 1
 
-g = exp_generator(4)
+g = exp_generator(2)
 for _ in range(8):
     print(next(g))
