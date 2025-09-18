@@ -1,3 +1,4 @@
+linear = lambda x: x/2 + 2
 numbers = list(range(1, 1001))
 
 split_lists = lambda lst: (
@@ -8,7 +9,7 @@ split_lists = lambda lst: (
 evens, odds = split_lists(numbers)
 
 multiply_consecutive = lambda lst: [lst[i] * lst[i + 1] for i in range(len(lst) - 1)]
-linear_with_next = lambda lst: [lst[i] / 2 + 2 + lst[i + 1] for i in range(len(lst) - 1)]
+linear_with_next = lambda lst: [linear(lst[i]) + lst[i + 1] for i in range(len(lst) - 1)]
 
 evens_multiplied = multiply_consecutive(evens)
 odds_multiplied = multiply_consecutive(odds)
